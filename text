@@ -1,0 +1,4 @@
+conda create --prefix ./envs
+
+conda activate ./envs
+conda activate D:\EDU\AIEXP\GADA\tik-tok-ml-project\envs
