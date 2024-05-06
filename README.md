@@ -1,18 +1,20 @@
-1	Introduction
-1.1	Importance of Analyzing Graduate Employability
+### 1	Introduction
+#### 1.1	Importance of Analyzing Graduate Employability
 For Students: It helps them understand their career prospects after graduation. This information can be used to make informed decisions about their studies, such as choosing a program aligned with job market demands or developing relevant skills through internships or extracurricular activities.
 For Universities: It helps universities assess the effectiveness of their programs in preparing students for the workforce. This information can be used to improve curriculum, career services, and overall student preparation.
 For Employers: It helps employers understand the skills and qualifications of graduates from different universities. This information can be used to develop targeted recruitment strategies.
 For Policymakers: It helps policymakers understand the skills needed in the workforce and identify any skills gaps. This information can be used to develop policies that support higher education and workforce development.
-1.2	Objectives of Analyzing Graduate Employability
+
+#### 1.2	Objectives of Analyzing Graduate Employability
 Measure employment rates: What percentage of graduates find employment within a specific timeframe after graduation?
 Identify in-demand skills: What skills are most sought-after by employers for graduates in specific fields?
 Compare universities: How does the employability of graduates from the University of Kelaniya compared to other universities?
 Identify areas for improvement: Are there any programs or faculties with lower than expected employment rates? If so, what are the reasons?
-1.3	Scope and Methodology
-1.3.1	Scope
+
+#### 1.3	Scope and Methodology
+##### 1.3.1	Scope
 The scope of this study encompasses the exploration of graduate employability of the Graduates of the University of Kelaniya through a process of Data collection, data preprocessing, and clustering techniques to identify specific employability statistics of the graduates. It involves the analysis of various factors that contribute to graduate employability, such as academic qualifications, skills, internships, previous employment, and the 5 capital of the Graduate Employability which are the Human capital, social capital, Cultural capital, psychological capital, and Identity capital. The study aims to identify patterns and clusters within the dataset that can provide insights into different profiles of employable graduates. Additionally, the scope includes evaluating the effectiveness of ML clustering in understanding and predicting graduate employability trends.
-1.3.2	Methodology
+##### 1.3.2	Methodology
 Data Collection / Data Source:
 Graduates from various academic department and faculties of the university of Kelaniya are subjected to a survey which includes all the necessary data for the scope of the project.
 Data Preprocessing: 
@@ -23,9 +25,7 @@ ML Clustering:
 Clustering algorithms such as K-means, to partition the dataset into distinct groups (cluster) based on similarities in the selected features. Principle component Analysis is used to reduce the dimensionality of the features and hence obtain a 2d and 3d clustering visualizations based on the data.
 
 
-
-
-2	Five Forms of Capital and Graduate Employability
+### 2	Five Forms of Capital and Graduate Employability
 2.1	Human Capital
 Human capital refers to the knowledge, skills, and abilities that individuals possess, which can be used to enhance their productivity and earning potential . In the context of graduate employability, human capital is crucial as it encompasses the education, training, and experiences that graduates have acquired during their studies and previous work experiences. Employers often seek graduates with strong technical skills, problem-solving abilities, and critical thinking skills, which are all aspects of human capital .
 2.2	Social Capital
@@ -39,15 +39,11 @@ Psychological capital refers to the positive psychological resources that indivi
 
  
  
-3	Data Collection and Analysis
+### 3	Data Collection and Analysis
 3.1	Data Source
 Data Source primarily includes categorical data, with 78 columns and 203 rows. This includes more specific columns such as Gender, Faculty, academic department, degree program, ethnicity, and other features related to the five graduate employability capitals of human capital, social capital, cultural capital, psychological capital, agentic capital and identity capital related columns. Data Source included mixed language data entries which were in Sinhala and English. Missing values were present in the dataset as per respondents' entries. There were some irrelevant columns such as Timestamp, Student No., and record ID etc. These irrelevant data columns were later ignored and dropped during the data pre-processing stage of the analysis.
 
- 
-
-
- 
-3.2	Data Preprocessing
+ 3.2	Data Preprocessing
 The data preprocessing steps included:
 3.2.1	Handling Missing Values:
 Imputing with Most Common Value:
@@ -71,7 +67,7 @@ The maximum possible total score would be 8 * 5 = 40.
 The Communication Skills Score is calculated as:
 Communication_Skills_Score = (col1 + col2 + ... + col8) / 40 * 100
  
-4	Exploratory Data Analysis 
+### 4	Exploratory Data Analysis 
 4.1	Visualizations and descriptive statistics
 Demographic Profiles
 The survey data reveals valuable insights into the demographic composition of the respondents. 
@@ -80,8 +76,6 @@ Gender-wise distribution of the respondents
 Ethnicity distribution of the respondents
 
 
-
- 
 Geographical Analysis
 The survey data covers respondents from various geographical regions and examination districts. 
  
@@ -95,8 +89,6 @@ Distribution of Academic merits based on the respondents.
 The employment percentages across different academic merit categories reveal a clear pattern.
  
 Figure 1 Overall Distribution of Academic Merits by the Graduates
-
-
  
 Degree Program and Department Analysis
 The survey respondents represent a diverse range of degree programs and academic departments. 
@@ -113,8 +105,8 @@ Internship Experience.
 Practical experience through internships is often considered valuable for enhancing employability.
  
  
-5	Clustering Approach
-5.1	K-means clustering.
+### 5	Clustering Approach
+#### 5.1	K-means clustering.
 1. Identifying Groups with Similar Employability Outcomes:
 K-means clustering excels at grouping data points with similar characteristics. In this case, it can group undergraduates based on their demographics and graduate capital (skills, networks, etc.). These groups might represent students with High vs. Low employability chances.
 2. Understanding Relationships Between Factors:
@@ -122,7 +114,7 @@ By analyzing the characteristics of each cluster, you can see how demographics a
 3. Simplifying Complex Data:
 K-means reduces complex data into a smaller number of clusters, making it easier to identify trends and patterns. This can be helpful for universities or policymakers to understand the overall employability landscape for their students and develop targeted support programs.
 
-5.2	Determining the optimal number of clusters
+##### 5.2	Determining the optimal number of clusters
 5.2.1	Silhouette analysis.
 •	Evaluate the silhouette score using the silhouette_score() function.
 •	Silhouette scores are used to study the distance between clusters.
