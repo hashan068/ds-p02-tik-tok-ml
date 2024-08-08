@@ -2,3 +2,7 @@ conda create --prefix ./envs
 
 conda activate ./envs
 conda activate D:\EDU\AIEXP\GADA\tik-tok-ml-project\envs
+
+conda install <package_name>
+
+conda activate "C:\Users\ASUS\OneDrive - University of Kelaniya\Data Science\ds-p02-tik-tok-ml\envs"
